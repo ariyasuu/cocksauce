@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../sauce.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CockSauce YT Shuffle</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav id="topnav">
+      <div class="nav__links">
+        <a class="nav-link home" href="https://cocksauce.com.br">HOME</a>
+        <a class="nav-link ost" href="https://cocksauce.com.br/ost">OST</a>
+        <a class="nav-link arte" target="_blank" href="https://cocksauce.com.br/arte/">ARTE</a>
+        <a class="nav-link sobre" href="https://cocksauce.com.br/sobre">Sobre</a>
+        <a class="nav-link grupo" href="https://steamcommunity.com/groups/cocksauceofficial">Grupo</a>
+        <a class="nav-link grupo" href="https://cocksauce.com.br/cockclicker/">CockClicker</a>
+        <a class="nav-link grupo" href="https://cocksauce.com.br/cockchat">CockChat</a>
+      </div>
+    </nav>
+    <div class="background" id="peniss"></div>
+    <div class="wrapper">
+      <div class="penis">
+        <div class="video__top">
+          <img src="https://cocksauce.com.br/assets/favicon.ico" alt="" />
+          <h2>Cocksauce OST <i class="fa-solid fa-star"></i></h2>
+        </div>
+        <div class="shufflewrapper">
+          <div class="video">
+            <div id="player"></div>
+            <div class="controls">
+              <button id="shuffleButton">🔀</button>
+              <button id="returnButton">⏪</button>
+              <button id="playButton">▶️</button>
+              <button id="pauseButton">⏸️</button>
+              <button id="skipButton">⏭️</button>
+            </div>
+          </div>
+          <div id="playlistContainer" class="playlist"></div>
+        </div>
+      </div>
+      <div class="quote" id="quote">
+        <h4></h4>
+      </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+    <script src="http://www.youtube.com/player_api"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+  padding-inline: 0.5rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+}
+
+.nav-link:hover {
+  background: rgb(215, 3, 3);
+  background: linear-gradient(0deg, rgba(215, 3, 3, 1) 60%, rgba(48, 255, 0, 1) 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cock {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.cock_logo {
+  color: red;
+  animation-name: color_change1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.wrapper {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: red; */
+}
+.shufflewrapper {
+  background-color: #242424;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.playlist {
+  overflow-y: scroll;
+  font-family: sans-serif;
+  max-height: 400px;
+  max-width: 640px;
+}
+.controls button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+}
+.video {
+  margin-bottom: 1rem;
+}
+#playlistContainer div {
+  color: #e1e1e1;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+@keyframes color_change1 {
+  0% {
+    color: red;
+  }
+  25% {
+    color: black;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: black;
+  }
+  100% {
+    color: red;
+  }
+}

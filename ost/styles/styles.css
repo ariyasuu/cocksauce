@@ -1,0 +1,126 @@
+html {
+  color-scheme: dark;
+}
+body {
+  color: #e1e1e1;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.penis {
+  background-color: hsla(0, 0%, 30%, 0.4);
+  padding: 1rem;
+  border-radius: 10px;
+  max-height: 600px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 5px 5px hsla(0, 0%, 0%, 0.5);
+  margin-bottom: 2rem;
+}
+.video__top img {
+  display: block;
+  max-width: 48px;
+  height: 100%;
+}
+.video__top {
+  margin-bottom: 1rem;
+  display: flex;
+  font-family: system-ui, sans-serif;
+  align-items: center;
+  gap: 1rem;
+  line-height: 0;
+  font-weight: 100;
+}
+.shufflewrapper {
+  display: flex;
+  gap: 1rem;
+}
+.playlist {
+  overflow-y: scroll;
+  font-family: sans-serif;
+  max-height: 400px;
+  max-width: 640px;
+  background-color: hsla(0, 0%, 7%, 0.5);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.playlist p {
+  cursor: pointer;
+}
+.playlist p:hover {
+  filter: brightness(0.8);
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.controls button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+  filter: hue-rotate(160deg);
+  transition: transform 100ms;
+}
+.controls button:hover {
+  transform: scale(1.02);
+}
+.controls button:active {
+  transform: scale(0.92);
+}
+.video {
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+iframe {
+  border-radius: 10px;
+}
+#playlistContainer div {
+  color: #e1e1e1;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.background {
+  position: absolute;
+  background-size: cover;
+  inset: 0;
+  z-index: -1;
+  filter: saturate(0.6) brightness(0.5);
+  animation: fadein 750ms ease;
+}
+@keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@media (max-width: 680px) {
+  .shufflewrapper {
+    flex-direction: column;
+  }
+}
+.current::before {
+  content: "▶ ";
+}
+.current {
+  color: rgb(190, 10, 9) !important;
+  font-weight: 800;
+}
+.quote {
+  padding: 1rem;
+  border-radius: 100vmax;
+  background-color: hsla(0, 0%, 30%, 0.4);
+  backdrop-filter: blur(5px);
+  font-family: sans-serif;
+  box-shadow: 0px 0px 5px 5px hsla(0, 0%, 0%, 0.5);
+  font-weight: 600;
+}
